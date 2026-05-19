@@ -13,6 +13,8 @@
 
 <br>
 
+📖 **[Read the Full Dissertation Presentation (PDF)](main.pdf)**
+
 ## 📖 Overview
 
 Poorly defined software requirements are the root cause of **37% of software project failures**. However, manually triaging thousands of lines of specification text is impossible for fast-moving Agile teams, and sending proprietary corporate architectures to external APIs (like ChatGPT) presents a massive data security risk.
@@ -28,9 +30,9 @@ Poorly defined software requirements are the root cause of **37% of software pro
 
 ---
 
-## 🏗️ The 4-Stage Architecture
+## 🏗️ 4-Stage Architecture
 
-PURR employs a tiered "Mullet Protocol"—business in the front (fast, classical ML), party in the back (heavy, generative AI)—to optimize compute resources.
+PURR employs a tiered Mullet Protocol in the front (fast, classical ML), computation in the back (heavy, generative AI) to optimize compute resources.
 
 1. **The Gatekeeper (LinearSVC):** Instantly parses TF-IDF vectors to filter Functional vs. Non-Functional requirements.
 2. **The Specialist (DistilRoBERTa):** Uses deep semantic understanding to categorize complex non-functional subtypes (e.g., Security, Usability, Performance).
@@ -38,8 +40,11 @@ PURR employs a tiered "Mullet Protocol"—business in the front (fast, classical
 4. **The Generative Fixer (Llama 3.1 8B):** If flagged as ambiguous, the LLM actively rewrites the text, replacing vague adjectives with concrete, testable metrics.
 
 <div align="center">
-  <i>Architecture flowchart goes here</i>
+  <img src="fwfew.png" alt="PURR Architecture Flowchart" width="800" style="background-color: white; padding: 20px; border-radius: 8px;">
+  
+  <br><br><br>
 </div>
+
 
 ---
 
@@ -97,6 +102,22 @@ Launch the Streamlit dashboard:
 To guarantee absolute mathematical rigor and prevent data leakage, this project strictly adheres to a **Split-First Protocol**. The custom 4,000-row dataset was stratified into an 80/20 train/test split *prior* to any SMOTE class balancing. This ensures the testing partition remained completely unseen by the models during training.
 
 The dataset and training notebooks can be found in the `/notebooks` directory.
+
+---
+## Screenshots
+
+
+  <div align="center">
+      <img src="2.png" alt="PURR Screenshot 1" width="800">
+
+  <br><br><br>
+
+  <img src="3.png" alt="PURR Screenshot 2" width="800">
+
+  <br><br><br>
+
+  <img src="11.png" alt="PURR Corpus Analysis" width="800">
+  </div>
 
 ---
 
